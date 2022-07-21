@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styling/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="#home">
+      <nav class="main-nav">
+        <div class="logo">
+          <h1>Web<span>Code</span></h1>
+        </div>
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#""
+        ><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fa fa-user"></i> About me</a></li>
+          <li><a href="#education"><i class="fa fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+      
+        </ul>
+        <button class="toogle" id="toggleNav">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+      </nav>
+
+      <div class="title">
+        <h1>Custom Resume</h1>
+      </div>
+
+      <div class="btn-container">
+        <a href="https://github.com/BadescuIonut130496" class="btn">Github</a>
+        <a href="https://www.linkedin.com/in/badescu-ionut-florin-97654221b/" class="btn">LinkedIn</a>
+      </div>
+    </header>
+
+    <section id="about" class="about">
+
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p>My name is Badescu Ionut Florin, I am 26 years old and I am a budding Front End Developer.
+                I am from Romania, a beautiful country with many possibilities.
+              I am an energetic, motivated person and I can still say about myself that I like it to carry out my tasks to the end.
+               I have been studying Web programming since 2020.
+            </p>
+            <p>
+                I was born in 1996 , in a small village , Badesti , Arges county,
+                but my current city is Bucharest. 
+            </p>
+          <div class="about-me-img">
+            <img src="/assets/me.jpg" width="25%" alt="me">
+          </div>
+            
+        </div>
+
+
+
+
+
+    </section>
+
+    <section id="education" id="education">
+      <h1>Education</h1>
+        <div class="flex-container">
+        
+            <div class="flex-item">
+                <img src="assets/highschool.png" alt="">
+                <h2>High School Ion Cantacuzino</h2>
+                <ul>
+                    <li>Start: Sep. 2011</li>
+                    <li>End: Jun. 2015</li>
+                    <li>Natural Science</li>
+                  
+                </ul>
+               
+
+            </div>
+            <div class="flex-item">
+                <img src="assets/tfp.jpg" alt="">
+                <h2>Te Fac Programator</h2>
+                <ul>
+                    <li>Start: Jun. 2019</li>
+                    <li>End: Jan. 2020</li>
+                    <li>Programming</li>
+                    <li>C++ , C#</li>
+                </ul>
+               
+
+            </div>
+            <div class="flex-item">
+                <img src="assets/bittnet.jpg" alt="">
+                <h2>Bittnet Training</h2>
+                <ul>
+                   <li>Start: Apr. 2021</li>
+                   <li>End: Aug. 2021</li>
+                   <li>Front End Development</li>
+                   <li>HTML , CSS , JavaScript</li>
+                    
+                    
+                </ul>
+               
+
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+      <h1>Contact Form</h1>
+      <form action="">
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name" >
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+     <label for="country">Select your country:</label>
+        <select name="country" id="country">
+        <option value="ro">Romania</option>
+        <option value="fr">France</option>
+        <option value="uk">United Kingdoms</option>
+        <option value="ge">Germany</option>
+        <option value="i">Italy</option>
+        <option value="gr">Greece</option>
+        <option value="bu">Bulgary</option>
+        <option value="po">Poland</option>
+        </select>
+        <input type="submit" value="Submit" id="submitBtn">
+      </form>
+    </section>
+    <footer>
+      <div class="flex-footer">
+        <div class="footer-item">
+          <i class="fa-brands fa-facebook"></i>
+          <a href="https://www.facebook.com/badescu.ionut.94/"><h3>Badescu Ionut</h3></a>
+        </div>
+        <div class="footer-item">
+         
+         <a href="https://www.instagram.com/badescu.ionut_96/"> <i class="fa-brands fa-instagram"></i><h3>badescu.ionut_96</h3></a>
+        </div>
+        <div class="footer-item">
+         
+        <a href="https://github.com/BadescuIonut130496"> <i class="fa-brands fa-github"></i><h3>BadescuIonut130496</h3></a>
+        </div>
+      </div>
+      <p>&copy;Copyright 2022</p>
+    </footer>
+
+    <script src="/javascript/navbar.js"></script>
+    <script src="/javascript/form.js"></script>
+  </body>
+</html>

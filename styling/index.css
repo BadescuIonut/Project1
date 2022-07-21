@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Edu SA beginner' , sans-serif;
+  background-color: tan;
+}
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0 , 0 , 0 , 0.5) , rgba(0 , 0 , 0 , 0.5)) ,url(/assets/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    background-attachment: fixed;
+}
+
+.main-nav{
+    position: fixed;
+    width: 100%;
+    padding: 0 12px;
+    background-color: lavender;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 10px 8px gray;
+    z-index: 1;
+    
+}
+
+.logo h1{
+    font-size: 2rem;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 16px;
+
+}
+i{
+    margin-right: 5px;
+}
+.nav-links li a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s linear;
+
+}
+
+.toogle{
+    display: none;
+    cursor: pointer;
+}
+
+
+.title{
+
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+   
+
+}
+
+.title h1{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-container{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 60%;
+    left: 50%;
+}
+
+.btn{
+    color: #fff;
+    margin: 5px;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s linear;
+}
+
+
+@media (max-width : 600px){
+
+    .main-nav{
+        padding-bottom: 20px;
+    }
+    .nav-links{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: lavender;
+        display: none;
+    }
+
+
+
+    .nav-links li a{
+
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .toogle{
+        display: block;
+        background: transparent;
+        border: none;
+
+    }
+    .bar{
+
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #000;
+    }
+
+
+
+    .active{
+        display: block;
+    }
+
+    .title h1{
+        font-size: 2.5rem;
+    }
+  
+   
+}
+
+@media (max-width:390px){
+    .btn-container{
+        top: 70%;
+    }
+    .btn{
+        display: block;
+      margin-bottom: 10px;
+        text-decoration: none;
+    }
+}
+
+.about{
+ 
+    width: 100%;
+}
+
+.skills{
+    min-height: 100vh;
+}
+
+@media (min-width:390px){
+    .btn-container{
+        top: 65%;
+        display: flex;
+    }
+}
+
+.about-me{
+    width: 80%;
+    height: auto;
+    background-color: #e6d8e1;
+    margin:20px auto;
+    padding: 10px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+
+.about-me h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+.about-me p{
+    width: 80%;
+    margin: auto;
+}
+
+.about-me-img{
+
+    width: 25%;
+    margin:10px auto;
+
+}
+
+.about-me-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media(max-width:700px){
+    .about-me-img{
+        width: 70%;
+
+    }
+    .about-me-img img{
+        width: 100%;
+    }
+}
+
+.flex-container{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item{
+    width: 20%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 10px gray;
+}
+.flex-item:hover{
+    transform: rotateY(360deg);
+    transition: 3s;
+}
+
+.flex-item img{
+    width: 50%;
+    margin: 0 25%;
+    
+}
+
+.flex-item ul{
+    list-style: none;
+    margin: 20px;
+}
+
+.flex-item ul li{
+    margin-bottom: 10px;
+}
+
+.flex-item h2:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+@media(max-width:1080px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+    }
+    .flex-item{
+        width: 80%;
+    }
+ 
+    
+}
+
+#education h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+
+
+
+#contact h1{
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 2rem;
+}
+
+
+#contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#contact form input{
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+#contact form input:last-child{
+    width: 100px;
+    background: linear-gradient(blue , darkblue);
+    color: #fff;
+}
+
+select{
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+   
+    font-size: 1.1rem;
+    margin: 30px auto;
+    border: none;
+ 
+}
+
+select option{
+    text-align: center;
+    background: transparent;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: rgb(200, 214, 219);
+
+    text-align: center;
+}
+
+.flex-footer{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.footer-item{
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.footer-item .fa-facebook{
+    font-size: 3rem;
+    color: blue;
+}
+.footer-item .fa-instagram{
+    font-size: 3rem;
+    color: orange;
+}
+.footer-item .fa-github{
+    font-size: 3rem;
+    color: black;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:542px){
+    .flex-footer{
+
+        flex-direction: column;
+
+    }
+    .footer-item{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #contact form input{
+        width: 80%;
+    }
+}
+
+footer p{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    padding: 20px;
+}
