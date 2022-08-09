@@ -6,7 +6,10 @@ const submitBtn = document.querySelector('#submitBtn');
 
 
 submitBtn.addEventListener('click' , function(){
-    if(fullName === '' || fullName === null){
-        alert('Check Full Name');
+
+    if(fullName === null || fullName === ''){
+        alert("Your name is required!")
     }
+    
+    
 })
